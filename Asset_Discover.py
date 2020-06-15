@@ -46,7 +46,7 @@ class BurpExtender(IBurpExtender, IScannerCheck):
         else:
             return 0
         
-    def doActiveScan(self):
+    def doActiveScan(self, baseRequestResponse):
         pass
 
     # Implement the doPassiveScan method of IScannerCheck interface
