@@ -45,6 +45,9 @@ class BurpExtender(IBurpExtender, IScannerCheck):
             return -1
         else:
             return 0
+        
+    def doActiveScan(self):
+        pass
 
     # Implement the doPassiveScan method of IScannerCheck interface
     # Burp Scanner invokes this method for each base request/response that is passively scanned.
